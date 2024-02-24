@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Game</title>
+    <link rel="stylesheet" href="game_css.css">
+</head>
+<body>
+
+    <div class="frame">
+
+        <!-- Title -->
+        <div class="header">
+            <h1>Rock / Paper / Scissors</h1>
+        </div>
+
+        <!-- Game Screen -->
+        <div class="game">
+            
+            <div class="human" id="human">
+                <div class="human_emoji" id="human_hand">👋</div>
+            </div>
+
+            <div class="choices">
+
+                <div class="buttons" id="buttons">
+                    <button value="Rock" onclick="getChoice(this)">Rock</button>
+                    <button value="Paper" onclick="getChoice(this)">Paper</button>
+                    <button value="Scissors" onclick="getChoice(this)">Scissors</button>
+                </div>
+
+                <div class="displayMessage" id="displayMessage">
+                    
+                </div>
+
+                <div class="replay" id="replay">
+                    Press Ctrl + R to play again
+                </div>
+
+            </div>
+
+            <div class="robot" id="robot">
+                <div class="robot_emoji" id="robot_hand">👋</div>
+            </div>
+
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            Human: <span id="human_score">0</span> Robot: <span id="robot_score">0</span> 
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
+
+<!-- 👊 -->
+<!-- 🖐️ -->
+<!-- ✌️ -->
